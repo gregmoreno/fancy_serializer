@@ -7,7 +7,7 @@ require "action_view/railtie"
 require "action_mailer/railtie"
 
 Bundler.require
-require "attribute_serializer"
+require "fancy_serializer"
 
 module Dummy
   class Application < Rails::Application

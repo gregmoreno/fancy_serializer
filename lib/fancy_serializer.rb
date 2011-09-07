@@ -1,4 +1,4 @@
-module AttributeSerializer
+module FancySerializer
 
   module ClassMethods
     # class User
@@ -66,6 +66,6 @@ module AttributeSerializer
 end
 
 class ActiveRecord::Base
-  extend AttributeSerializer::ClassMethods
+  extend FancySerializer::ClassMethods
 end
 
