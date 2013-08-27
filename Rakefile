@@ -7,7 +7,7 @@ rescue LoadError
 end
 
 require 'rake'
-require 'rake/rdoctask'
+require 'rdoc/task'
 
 require 'rake/testtask'
 
@@ -20,7 +20,7 @@ end
 
 task :default => :test
 
-Rake::RDocTask.new(:rdoc) do |rdoc|
+RDoc::Task.new do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title    = 'AttributeSerializer'
   rdoc.options << '--line-numbers' << '--inline-source'
