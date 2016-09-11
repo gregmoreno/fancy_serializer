@@ -1,4 +1,4 @@
-# fancy_serializer
+# fancy_serializer [![Build Status](https://travis-ci.org/dgilperez/fancy_serializer.svg?branch=master)](https://travis-ci.org/dgilperez/fancy_serializer)
 
 **fancy_serializer** builds on top of Rails serialize method to create accessors for your serialized fields.
 
