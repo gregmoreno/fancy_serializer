@@ -1,10 +1,12 @@
-Builds on top of Rails serialize method to create accessors for your serialized fields.
+# fancy_serializer [![Build Status](https://travis-ci.org/dgilperez/fancy_serializer.svg?branch=master)](https://travis-ci.org/dgilperez/fancy_serializer)
+
+**fancy_serializer** builds on top of Rails serialize method to create accessors for your serialized fields.
+
 Please read this post as <a href="http://gregmoreno.ca/preventing-model-explosion-via-rails-serialization/">I explain my motivation</a> behind this.
 
 Basically, it lets you do the following in your ActiveRecord models.
 
-{% highlight ruby %}
-
+```ruby
 class User
   serializeable :preferences, { :show_email => false }
 end
@@ -25,5 +27,4 @@ u.save
 u = User.find(u)
 u.show_email
 => true
-
-{% endhighlight %}
+```
